@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>WWPRevitToolBar</Name>
+    <Assembly>WWPRevitToolBar.dll</Assembly>
+    <FullClassName>WWPRevitToolBar.MyApp</FullClassName>
+    <ClientId>{68D3483C-B3AD-4AF1-9559-7E81E12E77CE}</ClientId>
+    <VendorId>WWP</VendorId>
+    <VendorDescription>philip.singer@westonwilliamson.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

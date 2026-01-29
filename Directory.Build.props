@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  
+  <!-- known paths -->
+  <PropertyGroup>
+    <RIRSourceDir>$(MSBuildThisFileDirectory)</RIRSourceDir>
+  </PropertyGroup>
+
+  <!-- global build configurations -->
+  <!-- only for csproj projects -->
+  <PropertyGroup Condition="'$(MSBuildProjectExtension)'=='.csproj'">
+    <SchemaVersion>2.0</SchemaVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+
+    <!-- Language -->
+    <LangVersion>8.0</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+
+    <!-- Target -->
+    <PlatformTarget>x64</PlatformTarget>
+    <UseWpf>true</UseWpf>
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <!-- Constants are provided for revit versions that are not supported anymore -->
+    <DefineConstants></DefineConstants>
+
+    <!-- Any unknown config is considered Debug -->
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <!-- Any unknown platform is considered AnyCPU -->
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+
+    <!-- Warnings -->
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3277;MSB3052</MSBuildWarningsAsMessages>
+
+    <!-- Code Analysis -->
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <!-- Build configurations for each combination Revit-Rhino -->
+  <PropertyGroup Condition="'$(MSBuildProjectExtension)'=='.csproj'">
+    <Configurations>
+      Debug 2023;
+      Debug 2025;
+      Release 2023;
+      Release 2025;
+    </Configurations>
+    <MSBuildProjectExtensionsPath>obj\$(Configuration)</MSBuildProjectExtensionsPath>
+  </PropertyGroup>
+
+  <!-- dbg vs release build configurations -->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DefineConstants>$(DefineConstants);TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <ConfigurationType>Debug</ConfigurationType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration.Contains('Release'))">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <Optimize>true</Optimize>
+    <ConfigurationType>Release</ConfigurationType>
+  </PropertyGroup>
+
+  <Target Name="Trace-BuildDate" BeforeTargets="ResolveReferences">
+    <Message Importance="high" Text="Deterministic = $(Deterministic)"/>
+    <Message Importance="high" Text="BuildDate = $(BuildDate)"/>
+    <Message Importance="high" Text="BuildVersion = $(BuildVersion)"/>
+    <Message Importance="high" Text="RevisionVersion = $(RevisionVersion)"/>
+  </Target>
+
+  <Target Name="Trace-TargetFramework" BeforeTargets="ResolveReferences">
+    <Message Importance="high" Text="TargetFramework = $(TargetFramework)"/>
+  </Target>
+
+  <!-- shared references -->
+  <ItemGroup Condition="'$(MSBuildProjectExtension)'=='.csproj' And $(TargetFramework.Contains('net48'))">
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" RequiredTargetFramework="4.0" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <Target Name="Remove-ProjectExtensions" AfterTargets="Clean" Condition="'$(MSBuildProjectExtension)'=='.csproj'">
+    <RemoveDir Directories="$(MSBuildProjectExtensionsPath)" />
+  </Target>
+
+</Project>
