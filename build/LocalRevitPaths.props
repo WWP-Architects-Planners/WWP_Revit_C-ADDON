@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <Revit2024InstallDir Condition="'$(Revit2024InstallDir)'==''">C:\Program Files\Autodesk\Revit 2024</Revit2024InstallDir>
+    <Revit2025InstallDir Condition="'$(Revit2025InstallDir)'==''">C:\Program Files\Autodesk\Revit 2025</Revit2025InstallDir>
+    <Revit2026InstallDir Condition="'$(Revit2026InstallDir)'==''">C:\Program Files\Autodesk\Revit 2026</Revit2026InstallDir>
+  </PropertyGroup>
+</Project>

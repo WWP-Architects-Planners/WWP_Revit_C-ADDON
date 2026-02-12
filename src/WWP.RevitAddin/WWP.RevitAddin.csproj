@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\build\LocalRevitPaths.props" Condition="Exists('..\..\build\LocalRevitPaths.props')" />
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AddinName>WWP Revit Addin</AddinName>
+    <VendorId>WWP</VendorId>
+    <VendorDescription>WWP Revit Addin Template</VendorDescription>
+    <AddinId>{F5B8B4D3-2B5B-4C57-B1AE-9C5F1C60C8B5}</AddinId>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RootNamespace>WWP.RevitAddin</RootNamespace>
+    <AssemblyName>WWP.RevitAddin</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RevitAddinsDir>$(AppData)\Autodesk\Revit\Addins\$(RevitVersion)\WWP_Revit_C-ADDON</RevitAddinsDir>
+    <AddinManifestPath>$(AppData)\Autodesk\Revit\Addins\$(RevitVersion)\WWP_Revit_C-ADDON.addin</AddinManifestPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug2024'">
+    <TargetFramework>net48</TargetFramework>
+    <RevitVersion>2024</RevitVersion>
+    <RevitInstallDir>$(Revit2024InstallDir)</RevitInstallDir>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(Revit2024InstallDir)\Revit.exe</StartProgram>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug2025'">
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RevitVersion>2025</RevitVersion>
+    <RevitInstallDir>$(Revit2025InstallDir)</RevitInstallDir>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(Revit2025InstallDir)\Revit.exe</StartProgram>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug2026'">
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RevitVersion>2026</RevitVersion>
+    <RevitInstallDir>$(Revit2026InstallDir)</RevitInstallDir>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(Revit2026InstallDir)\Revit.exe</StartProgram>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' != ''">
+    <Reference Include="RevitAPI">
+      <HintPath>$(RevitInstallDir)\RevitAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>$(RevitInstallDir)\RevitAPIUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AddinManifestLines Include="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;" />
+    <AddinManifestLines Include="&lt;RevitAddIns&gt;" />
+    <AddinManifestLines Include="  &lt;AddIn Type=&quot;Application&quot;&gt;" />
+    <AddinManifestLines Include="    &lt;Name&gt;$(AddinName)&lt;/Name&gt;" />
+    <AddinManifestLines Include="    &lt;Assembly&gt;$(RevitAddinsDir)\$(TargetFileName)&lt;/Assembly&gt;" />
+    <AddinManifestLines Include="    &lt;AddInId&gt;$(AddinId)&lt;/AddInId&gt;" />
+    <AddinManifestLines Include="    &lt;FullClassName&gt;WWP.RevitAddin.App&lt;/FullClassName&gt;" />
+    <AddinManifestLines Include="    &lt;VendorId&gt;$(VendorId)&lt;/VendorId&gt;" />
+    <AddinManifestLines Include="    &lt;VendorDescription&gt;$(VendorDescription)&lt;/VendorDescription&gt;" />
+    <AddinManifestLines Include="  &lt;/AddIn&gt;" />
+    <AddinManifestLines Include="&lt;/RevitAddIns&gt;" />
+  </ItemGroup>
+
+  <Target Name="CopyAddin" AfterTargets="Build" Condition="'$(RevitVersion)' != ''">
+    <MakeDir Directories="$(RevitAddinsDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(RevitAddinsDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(ReferenceCopyLocalPaths)" DestinationFolder="$(RevitAddinsDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(TargetDir)\$(TargetName).pdb" DestinationFolder="$(RevitAddinsDir)" SkipUnchangedFiles="true" Condition="Exists('$(TargetDir)\$(TargetName).pdb')" />
+    <WriteLinesToFile File="$(AddinManifestPath)" Lines="@(AddinManifestLines)" Overwrite="true" />
+  </Target>
+</Project>
