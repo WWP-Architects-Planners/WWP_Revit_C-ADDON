@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WWPRevitToolBar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug 2023")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c6b57e3784507ad3f905dd8b9d0b0226e707438")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3c90d389f93a08e514240bf64471f9627b4b876")]
 [assembly: System.Reflection.AssemblyProductAttribute("WWPRevitToolBar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WWPRevitToolBar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
