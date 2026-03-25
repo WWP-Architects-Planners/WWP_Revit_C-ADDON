@@ -7,6 +7,7 @@
     <RevitInstallPath Condition="'$(RevitInstallPath)'==''">$(ProgramFiles)\Autodesk\Revit $(RevitVersion)</RevitInstallPath>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
     <Configurations>Debug 2023;Debug 2024;Debug 2025;Debug 2026;Release 2023;Release 2024;Release 2025;Release 2026</Configurations>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
@@ -52,6 +53,8 @@
 
   <ItemGroup>
     <Resource Include="Resources\Smile.png" />
+    <Resource Include="Resources\Setup\*.png" />
+    <Resource Include="Resources\GeneratedIcons\*.png" />
   </ItemGroup>
 
   <ItemGroup>
