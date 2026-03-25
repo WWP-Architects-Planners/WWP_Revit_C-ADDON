@@ -11,7 +11,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("WWPRevitToolBar")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug 2026")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug 2025")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1095ff827214362ca13b386bed3923a9b083ddd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WWPRevitToolBar")]

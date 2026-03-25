@@ -6,6 +6,6 @@
     <FullClassName>WWPRevitToolBar.MyApp</FullClassName>
     <ClientId>{68D3483C-B3AD-4AF1-9559-7E81E12E77CE}</ClientId>
     <VendorId>WWP</VendorId>
-    <VendorDescription>philip.singer@westonwilliamson.com</VendorDescription>
+    <VendorDescription>jason.tian@wwparchitects.com</VendorDescription>
   </AddIn>
 </RevitAddIns>
