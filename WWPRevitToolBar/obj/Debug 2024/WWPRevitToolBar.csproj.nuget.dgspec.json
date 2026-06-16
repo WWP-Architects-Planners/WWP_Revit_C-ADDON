@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jtian\\Documents\\Github\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj": {}
+    "C:\\Users\\alex.macbeth\\source\\repos\\WWP-Architects-Planners\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jtian\\Documents\\Github\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj": {
+    "C:\\Users\\alex.macbeth\\source\\repos\\WWP-Architects-Planners\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jtian\\Documents\\Github\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj",
+        "projectUniqueName": "C:\\Users\\alex.macbeth\\source\\repos\\WWP-Architects-Planners\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj",
         "projectName": "WWPRevitToolBar",
-        "projectPath": "C:\\Users\\jtian\\Documents\\Github\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj",
-        "packagesPath": "C:\\Users\\jtian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jtian\\Documents\\Github\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\obj\\Debug 2024\\",
+        "projectPath": "C:\\Users\\alex.macbeth\\source\\repos\\WWP-Architects-Planners\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\WWPRevitToolBar.csproj",
+        "packagesPath": "C:\\Users\\alex.macbeth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex.macbeth\\source\\repos\\WWP-Architects-Planners\\WWP_Revit_C-ADDON\\WWPRevitToolBar\\obj\\Debug 2024\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jtian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alex.macbeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -42,14 +42,14 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net48": {
           "targetAlias": "net48",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

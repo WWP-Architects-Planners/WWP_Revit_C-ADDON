@@ -1,0 +1,15 @@
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\bin\Debug 2024\net48\ButtonAddin.addin
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\bin\Debug 2024\net48\WWPRevitToolBar.dll.config
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\bin\Debug 2024\net48\WWPRevitToolBar.dll
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\bin\Debug 2024\net48\WWPRevitToolBar.pdb
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.csproj.AssemblyReference.cache
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.g.resources
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.Properties.Resources.resources
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.csproj.GenerateResource.cache
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.AssemblyInfoInputs.cache
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.AssemblyInfo.cs
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.csproj.CoreCompileInputs.cache
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.sourcelink.json
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.dll
+C:\Users\alex.macbeth\source\repos\WWP-Architects-Planners\WWP_Revit_C-ADDON\WWPRevitToolBar\obj\Debug 2024\net48\WWPRevitToolBar.pdb

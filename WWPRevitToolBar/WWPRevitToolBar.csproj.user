@@ -9,4 +9,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 2025|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="ToolMirror\WWPTools.tab\3. Manage.panel\DoorTool.pulldown\RoomNumbertoDoorMark.pushbutton\ReNumberMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Ui\LevelSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Ui\ListSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Ui\ProjectUpgraderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
