@@ -1,0 +1,210 @@
+version=1
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=WWPRevitToolBar
+CommandLineArgsForDesignTimeEvaluation=-langversion:8.0 -define:;TRACE;DEBUG;TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=7.3
+ProjectAssetsFile=<PATH>obj/Debug 2023/project.assets.json
+RootNamespace=WWPRevitToolBar
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=*Undefined*
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>bin/Debug 2023/net48/WWPRevitToolBar.dll
+TargetRefPath=
+TemporaryDependencyNodeTargetIdentifier=net48
+
+[commandLineArguments]
+/noconfig
+/unsafe-
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/platform:x64
+/errorreport:prompt
+/warn:4
+/define:TRACE;DEBUG;TRACE;DEBUG_2023;NETFRAMEWORK;NET48;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER;NET48_OR_GREATER
+/highentropyva+
+/nullable:disable
+/debug+
+/debug:full
+/filealign:512
+/out:"obj\Debug 2023\net48\WWPRevitToolBar.dll"
+/ruleset:<PATH>../MinimumRecommendedRules.ruleset
+/subsystemversion:6.00
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:8.0
+/warnaserror+:NU1605
+
+[sourceFiles]
+Commands/Setup/
+ AddLineTypeCommand.cs
+ CreateProjectParameterTemplateCommand.cs
+ CreateViewsFromLevelCommand.cs
+ ImportProjectParametersCommand.cs
+ LevelSetupCommand.cs
+ ProjectUpgraderCommand.cs
+Generated/ToolbarDefinition.cs
+Infrastructure/
+ CommandBase.cs
+ DialogResult.cs
+ FullToolbarBuilder.cs
+ RibbonBuilder.cs
+ RibbonNames.cs
+MyApp.cs
+obj/Debug 2023/net48/
+ .NETFramework,Version=v4.8.AssemblyAttributes.cs
+ WWPRevitToolBar.AssemblyInfo.cs
+Properties/
+ Resources.Designer.cs
+ Settings.Designer.cs
+ToolMirror/WWPTools.tab/1. Setup.panel/levelsetup.pulldown/
+ CreateViewsFromlevel.pushbutton/CreateViewsFromlevelCommand.cs
+ SetupLevels.pushbutton/SetupLevelsCommand.cs
+ToolMirror/WWPTools.tab/1. Setup.panel/
+ Project Upgrader.pushbutton/ProjectUpgraderCommand.cs
+ Setup.stack/
+  Add Line Type.pushbutton/AddLineTypeCommand.cs
+  Add Project Parameter.pulldown/
+   Convert Shared to Project Parameter.pushbutton/ConvertSharedToProjectParameterCommand.cs
+   Create Template.pushbutton/CreateTemplateCommand.cs
+   Import from Excel.pushbutton/ImportfromExcelCommand.cs
+ToolMirror/WWPTools.tab/2. Context.panel/ContextBuilder.pulldown/
+ Buildingimporter.pushbutton/BuildingimporterCommand.cs
+ CADBuilder.pushbutton/CADBuilderCommand.cs
+ DirectShapeToMass.pushbutton/DirectShapeToMassCommand.cs
+ UKContextBuilder.pushbutton/UKContextBuilderCommand.cs
+ WebContextBuilder.pushbutton/WebContextBuilderCommand.cs
+ToolMirror/WWPTools.tab/2. Context.panel/
+ DetailLineCAD.pushbutton/DetailLineCADCommand.cs
+ FixFloorHeights.pushbutton/FixFloorHeightsCommand.cs
+ MassIDTool.pushbutton/MassIDToolCommand.cs
+ RandomPlants.pushbutton/RandomPlantsCommand.cs
+ RenameMaterials.pushbutton/RenameMaterialsCommand.cs
+ToolMirror/WWPTools.tab/3. Manage.panel/
+ AreaCopier.pushbutton/AreaCopierCommand.cs
+ CopyColorScheme.pulldown/
+  Copy Within Model.pushbutton/CopyWithinModelCommand.cs
+  Export to Excel.pushbutton/ExporttoExcelCommand.cs
+  Import from Excel.pushbutton/ImportfromExcelCommand.cs
+ CopyFilter.pulldown/
+  CopyCurrentFiltertMultView.pushbutton/CopyCurrentFiltertMultViewCommand.cs
+  CopyFiltertoCurrentView.pushbutton/CopyFiltertoCurrentViewCommand.cs
+  CopyFiltertoTemplate.pushbutton/CopyFiltertoTemplateCommand.cs
+ CopyParameter.pulldown/
+  CopyParameterByCategory.pushbutton/CopyParameterByCategoryCommand.cs
+  CopyParameterFromSelected.pushbutton/CopyParameterFromSelectedCommand.cs
+ DoorTool.pulldown/
+  DoorFireRating.pushbutton/DoorFireRatingCommand.cs
+  DoorsInView.pushbutton/DoorsInViewCommand.cs
+  DoorTypeDuplicator.pushbutton/DoorTypeDuplicatorCommand.cs
+  RoomNumbertoDoorMark.pushbutton/RoomNumbertoDoorMarkCommand.cs
+ FindReplaceName.pushbutton/FindReplaceNameCommand.cs
+ FindReplaceTypeName.pushbutton/FindReplaceTypeNameCommand.cs
+ Firerating.pulldown/
+  FireLineAll.pushbutton/FireLineAllCommand.cs
+  FireRatingAll.pushbutton/FireRatingAllCommand.cs
+  FireRatingClear.pushbutton/FireRatingClearCommand.cs
+  FireRatingConvertDetailItem.pushbutton/FireRatingConvertDetailItemCommand.cs
+  FireRatingFRRViews.pushbutton/FireRatingFRRViewsCommand.cs
+  FireRatingSelected.pushbutton/FireRatingSelectedCommand.cs
+ Import Key Schedule.pulldown/
+  Import from Excel.pushbutton/ImportfromExcelCommand.cs
+  Map by Name.pushbutton/MapbyNameCommand.cs
+ ManualRevisions.pushbutton/ManualRevisionsCommand.cs
+ ParkingtoRoom.pushbutton/ParkingtoRoomCommand.cs
+ Room2AreaBoundary.pushbutton/Room2AreaBoundaryCommand.cs
+ SheetScaleUpdater.pushbutton/SheetScaleUpdaterCommand.cs
+ Suite Plan Tool.pulldown/
+  MakeKeyPlanView.pushbutton/MakeKeyPlanViewCommand.cs
+  MakeViews.pushbutton/MakeViewsCommand.cs
+ TypeLayers.pulldown/
+  ExportTypeLayers.pushbutton/ExportTypeLayersCommand.cs
+  ImportTypeLayers.pushbutton/ImportTypeLayersCommand.cs
+  TransferTypes.pushbutton/TransferTypesCommand.cs
+ToolMirror/WWPTools.tab/4. Sheets.panel/
+ CombinedPrintSet.pushbutton/CombinedPrintSetCommand.cs
+ DeleteViews.pulldown/
+  DeleteAllunsedViews.pushbutton/DeleteAllunsedViewsCommand.cs
+  DeleteViews.pushbutton/DeleteViewsCommand.cs
+ Export2Ex.pushbutton/Export2ExCommand.cs
+ LayViewsOnSheet.pushbutton/LayViewsOnSheetCommand.cs
+ SheetDuplicator.pushbutton/SheetDuplicatorCommand.cs
+ SheetManager.pulldown/
+  DeleteCurrentSheet.pushbutton/DeleteCurrentSheetCommand.cs
+  DeleteSheetsfromList.pushbutton/DeleteSheetsfromListCommand.cs
+  DeleteViewsonSheet.pushbutton/DeleteViewsonSheetCommand.cs
+  SheetReNumber.pushbutton/SheetReNumberCommand.cs
+ ViewsDuplicator.pushbutton/ViewsDuplicatorCommand.cs
+ToolMirror/WWPTools.tab/5. Cleanup.panel/
+ About us.urlbutton/AboutusCommand.cs
+ Resources.stack/
+  Autodesk Construction Cloud.urlbutton/AutodeskConstructionCloudCommand.cs
+  Gitbook.pulldown/
+   1-Office Wide.urlbutton/_1OfficeWideCommand.cs
+   2-Revit.urlbutton/_2RevitCommand.cs
+   3-Additional Tools.urlbutton/_3AdditionalToolsCommand.cs
+   4-AI Based Tools.urlbutton/_4AIBasedToolsCommand.cs
+   5-Microsoft 365 Transition.urlbutton/_5Microsoft365TransitionCommand.cs
+  Miro.urlbutton/MiroCommand.cs
+ Revit Local File Cleaner.pushbutton/RevitLocalFileCleanerCommand.cs
+ RoundAngles.pushbutton/RoundAnglesCommand.cs
+ Wipe Schema.pushbutton/WipeSchemaCommand.cs
+Ui/
+ DialogService.cs
+ LevelSetupForm.cs
+ LevelSetupInput.cs
+ ListSelectionForm.cs
+ ProjectUpgraderForm.cs
+ ProjectUpgraderOptions.cs
+ SelectionItem.cs
+
+[metadataReferences]
+<NETFXREF>/v4.8/
+ Microsoft.CSharp.dll
+ Microsoft.VisualBasic.dll
+ mscorlib.dll
+ PresentationCore.dll
+ PresentationFramework.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Windows.Controls.Ribbon.dll
+ System.Windows.Forms.dll
+ System.Xaml.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+ UIAutomationClient.dll
+ UIAutomationClientsideProviders.dll
+ UIAutomationProvider.dll
+ UIAutomationTypes.dll
+ WindowsBase.dll
+ WindowsFormsIntegration.dll
+C:/Program Files/Autodesk/Revit 2024/
+ RevitAPI.dll
+ RevitAPIUI.dll
+
+[analyzerConfigFiles]
+obj/Debug 2023/net48/WWPRevitToolBar.GeneratedMSBuildEditorConfig.editorconfig
